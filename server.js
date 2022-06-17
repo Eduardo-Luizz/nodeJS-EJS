@@ -4,11 +4,11 @@ const app = express();
 app.set("view engine", "ejs"); // falando pro express que a ferramenta que vai renderizar o html e ejs
 
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("pages/index.ejs");
 })
 
 app.get("/sobre", function (req, res) {
-  res.render("about");
+  res.render("pages/about.ejs");
 })
 
 app.listen(8080);
